@@ -1,0 +1,15 @@
+{
+  "name": "ampere-shop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/FarhanMobashir/ampere-shop.git",
+  "author": "Mobashir Farhan <farhanmobashir007@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn run vite dev --host"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "vite": "^2.8.4"
+  }
+}
