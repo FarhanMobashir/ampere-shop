@@ -1,3 +1,47 @@
 body {
-  background-color: bisque;
+  position: relative;
+  min-height: 100vh;
+}
+
+#main {
+  padding: 1% 4%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tx-none {
+  text-decoration: none;
+}
+.login-signup-card {
+  box-shadow: 0px 0px 5px var(--black-100);
+  padding: 2%;
+  border-radius: var(--radius-sm);
+}
+
+.flex-between-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+}
+
+.tabs-container {
+  display: flex;
+}
+
+.tabs {
+  flex-basis: 49%;
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+}
+
+.tabs-active {
+  border-bottom: 5px solid var(--primary-200);
+  background-color: var(--black-000);
+  flex-basis: 49%;
+  margin: 0 1rem;
 }
