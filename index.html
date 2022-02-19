@@ -5,9 +5,273 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://ampereui.netlify.app/ampereUI.css" />
     <title>Ampere Shop | Home</title>
   </head>
   <body>
-    <h1>Home Page</h1>
+    <div id="header">
+      <div class="navigation-container">
+        <div class="upper-container">
+          <div class="logo-and-menu">
+            <i class="drawer-menu-icon uil uil-bars"></i>
+            <h1 class="h4 logo-short">a.</h1>
+            <h1 class="h4 logo">AmpereUI</h1>
+          </div>
+          <div class="navigation-link-container">
+            <a class="navigation-link" href="#">Motors</a>
+            <a class="navigation-link" href="#">Propellor</a>
+            <a class="navigation-link" href="#">Reciever</a>
+            <a class="navigation-link" href="#">Battery</a>
+          </div>
+          <div class="search-container-big">
+            <i class="search-icon uil uil-search"></i>
+            <input
+              placeholder="Search here..."
+              class="search-input-big"
+              type="text"
+            />
+          </div>
+
+          <div class="nav-icon-container">
+            <a href="#">
+              <div class="badge-container">
+                <i class="badge-icon uil uil-shopping-cart-alt"></i>
+                <i class="badge">5</i>
+              </div>
+            </a>
+            <a href="#">
+              <i class="badge-icon uil uil-user-circle"></i>
+            </a>
+          </div>
+        </div>
+        <div class="search-container-small">
+          <i class="search-icon uil uil-search"></i>
+          <input
+            placeholder="Search products here..."
+            class="search-input-small"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="main">
+      <div class="hero-section">
+        <div class="hero-content">
+          <p class="hero-heading h2 white-0">
+            Walk in fashion with our latest collection
+          </p>
+          <p class="hero-subheading h6 regular white-0">
+            We bring the most authentic and trending fabric to make you stand
+            out this era of fashion
+          </p>
+          <button class="btn btn-primary btn-lg">SHOP NOW</button>
+        </div>
+      </div>
+      <!-- offer-section -->
+      <div class="offer-section">
+        <h2 class="h2 tx-center m-20 p-20 black-6">Offers</h2>
+        <div class="offer-container">
+          <div class="basic-round-card">
+            <img
+              src="./assets/men.png"
+              alt=""
+              class="img-res img-round round-card-img"
+            />
+            <h4 class="h4 medium black-5">MEN</h4>
+          </div>
+          <div class="basic-round-card">
+            <img
+              src="./assets/women.png"
+              alt=""
+              class="img-res img-round round-card-img"
+            />
+            <h4 class="h4 medium black-5">WOMEN</h4>
+          </div>
+          <div class="basic-round-card">
+            <img
+              src="./assets/kid.png"
+              alt=""
+              class="img-res img-round round-card-img"
+            />
+            <h4 class="h4 medium black-5">KIDS</h4>
+          </div>
+          <div class="basic-round-card">
+            <img
+              src="./assets/boy.png"
+              alt=""
+              class="img-res img-round round-card-img"
+            />
+            <h4 class="h4 medium black-5">BOYS</h4>
+          </div>
+          <div class="basic-round-card">
+            <img
+              src="./assets/girl.png"
+              alt=""
+              class="img-res img-round round-card-img"
+            />
+            <h4 class="h4 medium black-5">GIRLS</h4>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="category-section">
+        <h2 class="h2 tx-center m-20 p-20 black-6">Categories</h2>
+        <div class="grid-component-stacked grid-center category-grid">
+          <div class="grid-component-stacked grid-center">
+            <img
+              src="./assets/women-c.png"
+              alt=""
+              class="span-4 category-image"
+            />
+            <img
+              src="./assets/women-jeans-c.png"
+              alt=""
+              class="span-4 category-image"
+            />
+          </div>
+          <div class="grid-component-stacked grid-center">
+            <img
+              src="./assets/women-c.png"
+              alt=""
+              class="span-4 category-image"
+            />
+            <img
+              src="./assets/women-jeans-c.png"
+              alt=""
+              class="span-4 category-image"
+            />
+          </div>
+          <div class="grid-component-stacked grid-center">
+            <img
+              src="./assets/kid-c.png"
+              alt=""
+              class="span-4 category-image"
+            />
+            <div class="grid-component-responsive grid-center span-4">
+              <img
+                src="./assets/legs-c.png"
+                alt=""
+                class="category-image span-2"
+              />
+              <img
+                src="./assets/men-jeans-c.png"
+                alt=""
+                class="category-image span-2"
+              />
+            </div>
+          </div>
+          <div class="grid-component-stacked grid-center">
+            <div class="grid-component-responsive grid-center span-4">
+              <img
+                src="./assets/legs-c.png"
+                alt=""
+                class="category-image span-2"
+              />
+              <img
+                src="./assets/men-jeans-c.png"
+                alt=""
+                class="category-image span-2"
+              />
+            </div>
+            <img
+              src="./assets/kid-c.png"
+              alt=""
+              class="span-4 category-image"
+            />
+          </div>
+        </div>
+      </div> -->
+      <div class="feature-section">
+        <h2 class="h2 tx-center m-20 p-20 black-6">Why Us ?</h2>
+        <div class="feature-cards-container">
+          <div class="feature-card">
+            <i class="uil uil-shield-check feature-icon"></i>
+            <h3 class="feature-card-heading">Fully Secure</h3>
+            <p class="feature-card-subheading">
+              Shopping with us ensure full security for our customer
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <i class="uil uil-gift feature-icon"></i>
+            <h3 class="feature-card-heading">Amazing Offers</h3>
+            <p class="feature-card-subheading">
+              Shopping with us ensure full security for our customer
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="uil uil-truck feature-icon"></i>
+            <h3 class="feature-card-heading">Ontime Shipment</h3>
+            <p class="feature-card-subheading">
+              Shopping with us ensure full security for our customer
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="uil uil-wallet feature-icon"></i>
+            <h3 class="feature-card-heading">Easy Payment</h3>
+            <p class="feature-card-subheading">
+              Shopping with us ensure full security for our customer
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="uil uil-phone-volume feature-icon"></i>
+            <h3 class="feature-card-heading">24*7 Support</h3>
+            <p class="feature-card-subheading">
+              Shopping with us ensure full security for our customer
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <footer class="footer">
+        <!-- first column -->
+        <div class="footer-columns">
+          <h4 class="footer-heading">AmpereJeans</h4>
+          <small class="footer-subheading"
+            >Best place to get all kind of jeans</small
+          >
+          <a
+            class="footer-link"
+            href="https://github.com/FarhanMobashir/minions-talk"
+            >Support</a
+          >
+          <a
+            class="footer-link"
+            href="https://www.youtube.com/watch?v=yLZazznWoAs&list=PLzvhQUIpvvuj5KPnyPyWsvgyzNkX_ACPA&index=6"
+            >Contact Us</a
+          >
+        </div>
+        <!-- second column -->
+        <div class="footer-columns">
+          <h4 class="footer-heading">Quick Links</h4>
+          <small class="footer-subheading"
+            >Here is our listed quick links</small
+          >
+          <a class="footer-link" href="https://github.com/FarhanMobashir"
+            >Men</a
+          >
+          <a
+            class="footer-link"
+            href="https://mobile.twitter.com/MobashirFarhan"
+            >Women</a
+          >
+          <a
+            class="footer-link"
+            href="https://www.linkedin.com/in/mobashirfarhan/"
+            >Kids</a
+          >
+        </div>
+        <!-- third column -->
+        <div class="footer-columns">
+          <h4 class="footer-heading">Blog</h4>
+          <small class="footer-subheading"
+            >Funtranslation minion api
+            <a href="https://funtranslations.com/api/minions"
+              >link Here</a
+            ></small
+          >
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
