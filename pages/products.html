@@ -4,10 +4,553 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://ampereui.netlify.app/ampereUI.css" />
     <link rel="stylesheet" href="../styles/products.css" />
     <title>Products</title>
   </head>
   <body>
-    <h1>Products</h1>
+    <div id="header">
+      <div class="navigation-container">
+        <div class="upper-container">
+          <div class="logo-and-menu">
+            <i class="drawer-menu-icon uil uil-bars"></i>
+            <a
+              href="../index.html"
+              class="h4 semi-bold black-6 logo-short tx-none"
+              >a.</a
+            >
+            <a href="../index.html" class="h4 semi-bold black-6 logo tx-none"
+              >AmpereUI</a
+            >
+          </div>
+          <div class="navigation-link-container">
+            <a class="navigation-link" href="#">MEN</a>
+            <a class="navigation-link" href="#">WOMEN</a>
+            <a class="navigation-link" href="#">KIDS</a>
+            <a class="navigation-link" href="#">OFFERS</a>
+          </div>
+          <div class="search-container-big">
+            <i class="search-icon uil uil-search"></i>
+            <input
+              placeholder="Search here..."
+              class="search-input-big"
+              type="text"
+            />
+          </div>
+
+          <div class="nav-icon-container">
+            <a href="./pages/cart.html">
+              <div class="badge-container">
+                <i class="badge-icon uil uil-shopping-cart-alt"></i>
+                <i class="badge">5</i>
+              </div>
+            </a>
+            <a href="#">
+              <div class="badge-container">
+                <i class="badge-icon uil uil-heart"></i>
+                <i class="badge">9+</i>
+              </div>
+            </a>
+            <a href="./pages/authentication.html">
+              <i class="badge-icon uil uil-user-circle"></i>
+            </a>
+          </div>
+        </div>
+        <div class="search-container-small">
+          <i class="search-icon uil uil-search"></i>
+          <input
+            placeholder="Search products here..."
+            class="search-input-small"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="main">
+      <div class="filter-container">
+        <div class="flex-between-container">
+          <h1 class="h4 black-6">Filters</h1>
+          <h5 class="tx-underline tx-14 black-4">Clear</h5>
+        </div>
+        <div class="filter-box">
+          <form action="" class="form-group">
+            <div class="radio-checkbox-container">
+              <h5 class="form-group-heading">Themes</h5>
+
+              <label class="radio-checkbox-label" for="party">
+                <input type="radio" id="party" name="theme" value="party" />
+                Party</label
+              >
+              <label class="radio-checkbox-label" for="traditional">
+                <input
+                  type="radio"
+                  id="traditional"
+                  name="theme"
+                  value="traditional"
+                />
+                Traditional</label
+              >
+              <label class="radio-checkbox-label" for="western">
+                <input type="radio" id="western" name="theme" value="western" />
+                Western</label
+              >
+            </div>
+            <div class="radio-checkbox-container">
+              <h5 class="form-group-heading">Sort By</h5>
+
+              <label class="radio-checkbox-label" for="low-price">
+                <input
+                  type="radio"
+                  id="low-price"
+                  name="sort"
+                  value="low-price"
+                />
+                Low-price</label
+              >
+              <label class="radio-checkbox-label" for="relevance">
+                <input
+                  type="radio"
+                  id="relevance"
+                  name="sort"
+                  value="relevance"
+                />
+                Relevance</label
+              >
+              <label class="radio-checkbox-label" for="popular">
+                <input type="radio" id="popular" name="sort" value="popular" />
+                Popular</label
+              >
+            </div>
+            <div class="radio-checkbox-container">
+              <h5 class="form-group-heading">Colors</h5>
+
+              <label class="radio-checkbox-label" for="red">
+                <input type="checkbox" name="color" id="red" value="red" />
+                Red</label
+              >
+              <label class="radio-checkbox-label" for="blue">
+                <input type="checkbox" name="color" id="blue" value="blue" />
+                Blue</label
+              >
+              <label class="radio-checkbox-label" for="black">
+                <input type="checkbox" name="color" id="black" value="black" />
+                Black</label
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="product-listing-wrapper">
+        <div class="active-filter-container">
+          <small class="pill grey">party <i class="uil uil-times"></i></small>
+          <small class="pill pink">western <i class="uil uil-times"></i></small>
+          <small class="pill green">blue <i class="uil uil-times"></i></small>
+          <small class="pill purple"
+            >summer <i class="uil uil-times"></i
+          ></small>
+        </div>
+        <div class="product-listing-container">
+          <div class="card-container-small">
+            <div class="card-img-grid">
+              <img
+                class="card-img img-with-icon"
+                src="../assets/jeans-1.png"
+                alt=""
+              />
+              <i class="uil uil-heart card-icon-small icon-on-image"></i>
+            </div>
+            <div class="content-container-small">
+              <h2 class="card-title-small">XBox Controller</h2>
+              <h4 class="card-subtitle-small">Men Skinny Jeans</h4>
+              <div class="bottom-container">
+                <div class="price-container">
+                  <h3 class="price-text-small">$19.90</h3>
+                  <small class="cutout-price-small">$29.90</small>
+                </div>
+                <div class="rating-container">
+                  <i class="fa fa-star tx-16 yellow-4"></i>
+                  <small class="rating-text-small">4.3</small>
+                </div>
+              </div>
+              <div class="pill-container">
+                <small class="pill pill-sm orange">10% OFF</small>
+                <small class="pill pill-sm grey">HOT PICK</small>
+              </div>
+              <button class="btn btn-primary wp-100">Add to cart</button>
+            </div>
+          </div>
+          <div class="card-container-small">
+            <div class="card-img-grid">
+              <img
+                class="card-img img-with-icon"
+                src="../assets/jeans-1.png"
+                alt=""
+              />
+              <i class="uil uil-heart card-icon-small icon-on-image"></i>
+            </div>
+            <div class="content-container-small">
+              <h2 class="card-title-small">XBox Controller</h2>
+              <h4 class="card-subtitle-small">Men Skinny Jeans</h4>
+              <div class="bottom-container">
+                <div class="price-container">
+                  <h3 class="price-text-small">$19.90</h3>
+                  <small class="cutout-price-small">$29.90</small>
+                </div>
+                <div class="rating-container">
+                  <i class="fa fa-star tx-16 yellow-4"></i>
+                  <small class="rating-text-small">4.3</small>
+                </div>
+              </div>
+              <div class="pill-container">
+                <small class="pill pill-sm orange">10% OFF</small>
+                <small class="pill pill-sm grey">HOT PICK</small>
+              </div>
+              <button class="btn btn-primary wp-100">Add to cart</button>
+            </div>
+          </div>
+          <div class="card-container-small">
+            <div class="card-img-grid">
+              <img
+                class="card-img img-with-icon"
+                src="../assets/jeans-1.png"
+                alt=""
+              />
+              <i class="uil uil-heart card-icon-small icon-on-image"></i>
+            </div>
+            <div class="content-container-small">
+              <h2 class="card-title-small">XBox Controller</h2>
+              <h4 class="card-subtitle-small">Men Skinny Jeans</h4>
+              <div class="bottom-container">
+                <div class="price-container">
+                  <h3 class="price-text-small">$19.90</h3>
+                  <small class="cutout-price-small">$29.90</small>
+                </div>
+                <div class="rating-container">
+                  <i class="fa fa-star tx-16 yellow-4"></i>
+                  <small class="rating-text-small">4.3</small>
+                </div>
+              </div>
+              <div class="pill-container">
+                <small class="pill pill-sm orange">10% OFF</small>
+                <small class="pill pill-sm grey">HOT PICK</small>
+              </div>
+              <button class="btn btn-primary wp-100">Add to cart</button>
+            </div>
+          </div>
+          <div class="card-container-small">
+            <div class="card-img-grid">
+              <img
+                class="card-img img-with-icon"
+                src="../assets/jeans-1.png"
+                alt=""
+              />
+              <i class="uil uil-heart card-icon-small icon-on-image"></i>
+            </div>
+            <div class="content-container-small">
+              <h2 class="card-title-small">XBox Controller</h2>
+              <h4 class="card-subtitle-small">Men Skinny Jeans</h4>
+              <div class="bottom-container">
+                <div class="price-container">
+                  <h3 class="price-text-small">$19.90</h3>
+                  <small class="cutout-price-small">$29.90</small>
+                </div>
+                <div class="rating-container">
+                  <i class="fa fa-star tx-16 yellow-4"></i>
+                  <small class="rating-text-small">4.3</small>
+                </div>
+              </div>
+              <div class="pill-container">
+                <small class="pill pill-sm orange">10% OFF</small>
+                <small class="pill pill-sm grey">HOT PICK</small>
+              </div>
+              <button class="btn btn-primary wp-100">Add to cart</button>
+            </div>
+          </div>
+          <div class="card-container-small">
+            <div class="card-img-grid">
+              <img
+                class="card-img img-with-icon"
+                src="../assets/jeans-1.png"
+                alt=""
+              />
+              <i class="uil uil-heart card-icon-small icon-on-image"></i>
+            </div>
+            <div class="content-container-small">
+              <h2 class="card-title-small">XBox Controller</h2>
+              <h4 class="card-subtitle-small">Men Skinny Jeans</h4>
+              <div class="bottom-container">
+                <div class="price-container">
+                  <h3 class="price-text-small">$19.90</h3>
+                  <small class="cutout-price-small">$29.90</small>
+                </div>
+                <div class="rating-container">
+                  <i class="fa fa-star tx-16 yellow-4"></i>
+                  <small class="rating-text-small">4.3</small>
+                </div>
+              </div>
+              <div class="pill-container">
+                <small class="pill pill-sm orange">10% OFF</small>
+                <small class="pill pill-sm grey">HOT PICK</small>
+              </div>
+              <button class="btn btn-primary wp-100">Add to cart</button>
+            </div>
+          </div>
+          <div class="card-container-small">
+            <div class="card-img-grid">
+              <img
+                class="card-img img-with-icon"
+                src="../assets/jeans-1.png"
+                alt=""
+              />
+              <i class="uil uil-heart card-icon-small icon-on-image"></i>
+            </div>
+            <div class="content-container-small">
+              <h2 class="card-title-small">XBox Controller</h2>
+              <h4 class="card-subtitle-small">Men Skinny Jeans</h4>
+              <div class="bottom-container">
+                <div class="price-container">
+                  <h3 class="price-text-small">$19.90</h3>
+                  <small class="cutout-price-small">$29.90</small>
+                </div>
+                <div class="rating-container">
+                  <i class="fa fa-star tx-16 yellow-4"></i>
+                  <small class="rating-text-small">4.3</small>
+                </div>
+              </div>
+              <div class="pill-container">
+                <small class="pill pill-sm orange">10% OFF</small>
+                <small class="pill pill-sm grey">HOT PICK</small>
+              </div>
+              <button class="btn btn-primary wp-100">Add to cart</button>
+            </div>
+          </div>
+          <div class="card-container-small">
+            <div class="card-img-grid">
+              <img
+                class="card-img img-with-icon"
+                src="../assets/jeans-1.png"
+                alt=""
+              />
+              <i class="uil uil-heart card-icon-small icon-on-image"></i>
+            </div>
+            <div class="content-container-small">
+              <h2 class="card-title-small">XBox Controller</h2>
+              <h4 class="card-subtitle-small">Men Skinny Jeans</h4>
+              <div class="bottom-container">
+                <div class="price-container">
+                  <h3 class="price-text-small">$19.90</h3>
+                  <small class="cutout-price-small">$29.90</small>
+                </div>
+                <div class="rating-container">
+                  <i class="fa fa-star tx-16 yellow-4"></i>
+                  <small class="rating-text-small">4.3</small>
+                </div>
+              </div>
+              <div class="pill-container">
+                <small class="pill pill-sm orange">10% OFF</small>
+                <small class="pill pill-sm grey">HOT PICK</small>
+              </div>
+              <button class="btn btn-primary wp-100">Add to cart</button>
+            </div>
+          </div>
+          <div class="card-container-small">
+            <div class="card-img-grid">
+              <img
+                class="card-img img-with-icon"
+                src="../assets/jeans-1.png"
+                alt=""
+              />
+              <i class="uil uil-heart card-icon-small icon-on-image"></i>
+            </div>
+            <div class="content-container-small">
+              <h2 class="card-title-small">XBox Controller</h2>
+              <h4 class="card-subtitle-small">Men Skinny Jeans</h4>
+              <div class="bottom-container">
+                <div class="price-container">
+                  <h3 class="price-text-small">$19.90</h3>
+                  <small class="cutout-price-small">$29.90</small>
+                </div>
+                <div class="rating-container">
+                  <i class="fa fa-star tx-16 yellow-4"></i>
+                  <small class="rating-text-small">4.3</small>
+                </div>
+              </div>
+              <div class="pill-container">
+                <small class="pill pill-sm orange">10% OFF</small>
+                <small class="pill pill-sm grey">HOT PICK</small>
+              </div>
+              <button class="btn btn-primary wp-100">Add to cart</button>
+            </div>
+          </div>
+          <div class="card-container-small">
+            <div class="card-img-grid">
+              <img
+                class="card-img img-with-icon"
+                src="../assets/jeans-1.png"
+                alt=""
+              />
+              <i class="uil uil-heart card-icon-small icon-on-image"></i>
+            </div>
+            <div class="content-container-small">
+              <h2 class="card-title-small">XBox Controller</h2>
+              <h4 class="card-subtitle-small">Men Skinny Jeans</h4>
+              <div class="bottom-container">
+                <div class="price-container">
+                  <h3 class="price-text-small">$19.90</h3>
+                  <small class="cutout-price-small">$29.90</small>
+                </div>
+                <div class="rating-container">
+                  <i class="fa fa-star tx-16 yellow-4"></i>
+                  <small class="rating-text-small">4.3</small>
+                </div>
+              </div>
+              <div class="pill-container">
+                <small class="pill pill-sm orange">10% OFF</small>
+                <small class="pill pill-sm grey">HOT PICK</small>
+              </div>
+              <button class="btn btn-primary wp-100">Add to cart</button>
+            </div>
+          </div>
+          <div class="card-container-small">
+            <div class="card-img-grid">
+              <img
+                class="card-img img-with-icon"
+                src="../assets/jeans-1.png"
+                alt=""
+              />
+              <i class="uil uil-heart card-icon-small icon-on-image"></i>
+            </div>
+            <div class="content-container-small">
+              <h2 class="card-title-small">XBox Controller</h2>
+              <h4 class="card-subtitle-small">Men Skinny Jeans</h4>
+              <div class="bottom-container">
+                <div class="price-container">
+                  <h3 class="price-text-small">$19.90</h3>
+                  <small class="cutout-price-small">$29.90</small>
+                </div>
+                <div class="rating-container">
+                  <i class="fa fa-star tx-16 yellow-4"></i>
+                  <small class="rating-text-small">4.3</small>
+                </div>
+              </div>
+              <div class="pill-container">
+                <small class="pill pill-sm orange">10% OFF</small>
+                <small class="pill pill-sm grey">HOT PICK</small>
+              </div>
+              <button class="btn btn-primary wp-100">Add to cart</button>
+            </div>
+          </div>
+          <div class="card-container-small">
+            <div class="card-img-grid">
+              <img
+                class="card-img img-with-icon"
+                src="../assets/jeans-1.png"
+                alt=""
+              />
+              <i class="uil uil-heart card-icon-small icon-on-image"></i>
+            </div>
+            <div class="content-container-small">
+              <h2 class="card-title-small">XBox Controller</h2>
+              <h4 class="card-subtitle-small">Men Skinny Jeans</h4>
+              <div class="bottom-container">
+                <div class="price-container">
+                  <h3 class="price-text-small">$19.90</h3>
+                  <small class="cutout-price-small">$29.90</small>
+                </div>
+                <div class="rating-container">
+                  <i class="fa fa-star tx-16 yellow-4"></i>
+                  <small class="rating-text-small">4.3</small>
+                </div>
+              </div>
+              <div class="pill-container">
+                <small class="pill pill-sm orange">10% OFF</small>
+                <small class="pill pill-sm grey">HOT PICK</small>
+              </div>
+              <button class="btn btn-primary wp-100">Add to cart</button>
+            </div>
+          </div>
+          <div class="card-container-small">
+            <div class="card-img-grid">
+              <img
+                class="card-img img-with-icon"
+                src="../assets/jeans-1.png"
+                alt=""
+              />
+              <i class="uil uil-heart card-icon-small icon-on-image"></i>
+            </div>
+            <div class="content-container-small">
+              <h2 class="card-title-small">XBox Controller</h2>
+              <h4 class="card-subtitle-small">Men Skinny Jeans</h4>
+              <div class="bottom-container">
+                <div class="price-container">
+                  <h3 class="price-text-small">$19.90</h3>
+                  <small class="cutout-price-small">$29.90</small>
+                </div>
+                <div class="rating-container">
+                  <i class="fa fa-star tx-16 yellow-4"></i>
+                  <small class="rating-text-small">4.3</small>
+                </div>
+              </div>
+              <div class="pill-container">
+                <small class="pill pill-sm orange">10% OFF</small>
+                <small class="pill pill-sm grey">HOT PICK</small>
+              </div>
+              <button class="btn btn-primary wp-100">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <footer class="footer">
+        <!-- first column -->
+        <div class="footer-columns">
+          <h4 class="footer-heading">AmpereJeans</h4>
+          <small class="footer-subheading"
+            >Best place to get all kind of jeans</small
+          >
+          <a
+            class="footer-link"
+            href="https://github.com/FarhanMobashir/minions-talk"
+            >Support</a
+          >
+          <a
+            class="footer-link"
+            href="https://www.youtube.com/watch?v=yLZazznWoAs&list=PLzvhQUIpvvuj5KPnyPyWsvgyzNkX_ACPA&index=6"
+            >Contact Us</a
+          >
+        </div>
+        <!-- second column -->
+        <div class="footer-columns">
+          <h4 class="footer-heading">Quick Links</h4>
+          <small class="footer-subheading"
+            >Here is our listed quick links</small
+          >
+          <a class="footer-link" href="https://github.com/FarhanMobashir"
+            >Men</a
+          >
+          <a
+            class="footer-link"
+            href="https://mobile.twitter.com/MobashirFarhan"
+            >Women</a
+          >
+          <a
+            class="footer-link"
+            href="https://www.linkedin.com/in/mobashirfarhan/"
+            >Kids</a
+          >
+        </div>
+        <!-- third column -->
+        <div class="footer-columns">
+          <h4 class="footer-heading">Blog</h4>
+          <small class="footer-subheading"
+            >Funtranslation minion api
+            <a href="https://funtranslations.com/api/minions"
+              >link Here</a
+            ></small
+          >
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
