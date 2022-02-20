@@ -6,9 +6,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://ampereui.netlify.app/ampereUI.css" />
     <link rel="stylesheet" href="../styles/authentication.css" />
-    <title>Authentication</title>
+    <title>Login | Signup</title>
   </head>
   <body>
-    <h1>Authentication</h1>
+    <div id="header">
+      <div class="navigation-container">
+        <div class="upper-container">
+          <div class="logo-and-menu">
+            <i class="drawer-menu-icon uil uil-bars"></i>
+            <a
+              href="../index.html"
+              class="h4 semi-bold black-6 logo-short tx-none"
+              >a.</a
+            >
+            <a href="../index.html" class="h4 semi-bold black-6 logo tx-none"
+              >AmpereUI</a
+            >
+          </div>
+          <div class="navigation-link-container">
+            <a class="navigation-link" href="#">MEN</a>
+            <a class="navigation-link" href="#">WOMEN</a>
+            <a class="navigation-link" href="#">KIDS</a>
+            <a class="navigation-link" href="#">OFFERS</a>
+          </div>
+          <div class="search-container-big">
+            <i class="search-icon uil uil-search"></i>
+            <input
+              placeholder="Search here..."
+              class="search-input-big"
+              type="text"
+            />
+          </div>
+
+          <div class="nav-icon-container">
+            <a href="./pages/cart.html">
+              <div class="badge-container">
+                <i class="badge-icon uil uil-shopping-cart-alt"></i>
+                <i class="badge">5</i>
+              </div>
+            </a>
+            <a href="#">
+              <div class="badge-container">
+                <i class="badge-icon uil uil-heart"></i>
+                <i class="badge">9+</i>
+              </div>
+            </a>
+            <a href="./pages/authentication.html">
+              <i class="badge-icon uil uil-user-circle"></i>
+            </a>
+          </div>
+        </div>
+        <div class="search-container-small">
+          <i class="search-icon uil uil-search"></i>
+          <input
+            placeholder="Search products here..."
+            class="search-input-small"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="main">
+      <div class="page-title-wrapper tx-center mv-20">
+        <h1 class="h5 black-6">Login | Signup</h1>
+      </div>
+      <div class="login-signup-card">
+        <div class="tabs-container">
+          <h1 class="tabs tx-center tabs-active">LOG IN</h1>
+          <h1 class="tabs tx-center">SIGN UP</h1>
+        </div>
+        <form action="" class="auth-form">
+          <div class="input-block">
+            <label class="label label-required" for="text">Email </label>
+            <input type="email" class="text-input" required />
+          </div>
+          <div class="input-block">
+            <label class="label label-required" for="text">Password </label>
+            <input type="password" class="text-input" required />
+          </div>
+          <div class="flex-between-container">
+            <label class="radio-checkbox-label" for="black">
+              <input type="checkbox" name="color" id="black" value="black" />
+              Rememeber me</label
+            >
+            <p class="tx-18 tx-underline blue-4">Forgot password</p>
+          </div>
+          <div class="flex-between-container">
+            <button class="btn btn-primary btn-md mt-20 wp-100">LOG IN</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="footer">
+      <footer class="footer">
+        <!-- first column -->
+        <div class="footer-columns">
+          <h4 class="footer-heading">AmpereJeans</h4>
+          <small class="footer-subheading"
+            >Best place to get all kind of jeans</small
+          >
+          <a
+            class="footer-link"
+            href="https://github.com/FarhanMobashir/minions-talk"
+            >Support</a
+          >
+          <a
+            class="footer-link"
+            href="https://www.youtube.com/watch?v=yLZazznWoAs&list=PLzvhQUIpvvuj5KPnyPyWsvgyzNkX_ACPA&index=6"
+            >Contact Us</a
+          >
+        </div>
+        <!-- second column -->
+        <div class="footer-columns">
+          <h4 class="footer-heading">Quick Links</h4>
+          <small class="footer-subheading"
+            >Here is our listed quick links</small
+          >
+          <a class="footer-link" href="https://github.com/FarhanMobashir"
+            >Men</a
+          >
+          <a
+            class="footer-link"
+            href="https://mobile.twitter.com/MobashirFarhan"
+            >Women</a
+          >
+          <a
+            class="footer-link"
+            href="https://www.linkedin.com/in/mobashirfarhan/"
+            >Kids</a
+          >
+        </div>
+        <!-- third column -->
+        <div class="footer-columns">
+          <h4 class="footer-heading">Blog</h4>
+          <small class="footer-subheading"
+            >Funtranslation minion api
+            <a href="https://funtranslations.com/api/minions"
+              >link Here</a
+            ></small
+          >
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
