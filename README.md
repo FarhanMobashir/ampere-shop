@@ -4,8 +4,8 @@
 
 ### Your one stop place to buy best quality jeans
 
-![Forks](https://img.shields.io/github/forks/Hamdrive/FueledUp)
-![Stars](https://img.shields.io/github/stars/Hamdrive/FueledUp)
+![Forks](https://img.shields.io/github/forks/FarhanMobashir/ampere-shop)
+![Stars](https://img.shields.io/github/stars/FarhanMobashir/ampere-shop)
 
 </div>
 
