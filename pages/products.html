@@ -9,7 +9,7 @@
     <title>Products</title>
   </head>
   <body>
-    <div id="header">
+    <header id="header">
       <div class="navigation-container">
         <div class="upper-container">
           <div class="logo-and-menu">
@@ -34,24 +34,24 @@
             <input
               placeholder="Search here..."
               class="search-input-big"
-              type="text"
+              type="search"
             />
           </div>
 
           <div class="nav-icon-container">
-            <a href="./pages/cart.html">
+            <a href="./cart.html">
               <div class="badge-container">
                 <i class="badge-icon uil uil-shopping-cart-alt"></i>
                 <i class="badge">5</i>
               </div>
             </a>
-            <a href="#">
+            <a href="./wishlist.html">
               <div class="badge-container">
                 <i class="badge-icon uil uil-heart"></i>
                 <i class="badge">9+</i>
               </div>
             </a>
-            <a href="./pages/authentication.html">
+            <a href="./authentication.html">
               <i class="badge-icon uil uil-user-circle"></i>
             </a>
           </div>
@@ -61,11 +61,11 @@
           <input
             placeholder="Search products here..."
             class="search-input-small"
-            type="text"
+            type="search"
           />
         </div>
       </div>
-    </div>
+    </header>
     <div id="main">
       <div class="filter-container">
         <div class="flex-between-container">
@@ -75,24 +75,19 @@
         <div class="filter-box">
           <form action="" class="form-group">
             <div class="radio-checkbox-container">
-              <h5 class="form-group-heading">Themes</h5>
+              <h5 class="form-group-heading">Category</h5>
 
-              <label class="radio-checkbox-label" for="party">
-                <input type="radio" id="party" name="theme" value="party" />
-                Party</label
+              <label class="radio-checkbox-label" for="men">
+                <input type="radio" id="men" name="category" value="men" />
+                Men</label
               >
-              <label class="radio-checkbox-label" for="traditional">
-                <input
-                  type="radio"
-                  id="traditional"
-                  name="theme"
-                  value="traditional"
-                />
-                Traditional</label
+              <label class="radio-checkbox-label" for="women">
+                <input type="radio" id="women" name="category" value="women" />
+                Women</label
               >
-              <label class="radio-checkbox-label" for="western">
-                <input type="radio" id="western" name="theme" value="western" />
-                Western</label
+              <label class="radio-checkbox-label" for="kids">
+                <input type="radio" id="kids" name="category" value="kids" />
+                Kids</label
               >
             </div>
             <div class="radio-checkbox-container">
@@ -122,19 +117,34 @@
               >
             </div>
             <div class="radio-checkbox-container">
-              <h5 class="form-group-heading">Colors</h5>
+              <h5 class="form-group-heading">Rating</h5>
 
-              <label class="radio-checkbox-label" for="red">
-                <input type="checkbox" name="color" id="red" value="red" />
-                Red</label
+              <label class="radio-checkbox-label" for="5-star">
+                <input
+                  type="checkbox"
+                  name="rating"
+                  id="5-star"
+                  value="5-star"
+                />
+                5-star</label
               >
-              <label class="radio-checkbox-label" for="blue">
-                <input type="checkbox" name="color" id="blue" value="blue" />
-                Blue</label
+              <label class="radio-checkbox-label" for="3-star">
+                <input
+                  type="checkbox"
+                  name="rating"
+                  id="3-star"
+                  value="3-star"
+                />
+                3-star</label
               >
-              <label class="radio-checkbox-label" for="black">
-                <input type="checkbox" name="color" id="black" value="black" />
-                Black</label
+              <label class="radio-checkbox-label" for="2-star">
+                <input
+                  type="checkbox"
+                  name="rating"
+                  id="2-star"
+                  value="2-star"
+                />
+                2-star</label
               >
             </div>
           </form>
